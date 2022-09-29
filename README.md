@@ -12,9 +12,9 @@ You will find on this repo the resources to use for the second tutorial lesson. 
 You will find a `artworks` object in the `ìndex.js` file.
 
 1. You need to create a function that will modify this object when the user clicks on the `.button` and show the result in the `.results` section.
-2. The result you should get from the object is: `Migrations of Memory-Wild Geese Descend on Level Sands IV no. 3 (Painting, 2021), Migrations of Memory-Wild Geese Descend on Level Sands IV, no. 1 (Painting, 2021), Hope Is the Thing with Feathers (The Little Bird) (Print, 2021), Raitra Marosoratra (Textile, 2021)`.
+2. The result you should get from the object is: `Far from Home (Print, 2021), Migrations of Memory-Wild Geese Descend on Level Sands IV no. 3 (Painting, 2021), Migrations of Memory-Wild Geese Descend on Level Sands IV, no. 1 (Painting, 2021), Hope Is the Thing with Feathers (The Little Bird) (Print, 2021), Raitra Marosoratra (Textile, 2021)`.
 
-*Hints:* These artworks are only the 4 last artworks when sorted by `id`.
+*Hints:* These artworks are only the 5 artworks created in 2021, sorted by `id`.
 
 ## Exercice #2
 
