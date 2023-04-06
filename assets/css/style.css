@@ -5,3 +5,14 @@ body {
 .main {
   padding: 10px;
 }
+
+.list__title {
+  font-size: 30px;
+}
+
+.list__sub__text {
+  font-size: 15px;
+  border-bottom: 3px solid black;
+  padding-bottom: 7.5px;
+  margin-bottom: 7.5px;
+}

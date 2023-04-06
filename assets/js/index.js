@@ -361,8 +361,45 @@ const artworks = [
   },
 ];
 
-const helloWorld = () => {
-  console.log("Hello World!");
-};
+const button = document.querySelectorAll('[id=button]');
+const results = document.getElementById("results");
 
-helloWorld();
+console.log(artworks)
+
+let listElement = document.createElement('ul');
+listElement.classList.add("list");
+results.appendChild(listElement);
+
+button.addEventListener('click', ()=>{
+  listElement.innerHTML = ""; 
+
+  for (let i = 0; i < artworks.length; i++) {
+    if(artworks[i].creation_date == 2021){
+      // console.log(artworks[i].title)
+
+      // create let of all atributes
+      let title = artworks[i].title +" ";
+      let type = artworks[i].type +" ";
+      let creation_date = artworks[i].creation_date;
+      let technique = artworks[i].technique +" ";
+      let department = artworks[i].department +" ";
+
+      // create list items
+      let listItem = document.createElement('ul');
+      listItem.classList.add("list__item");
+      listElement.appendChild(listItem);
+
+      let listTitle = document.createElement('li');
+      listTitle.textContent = title +"("+type + creation_date+")";
+      listTitle.classList.add("sub__list__item");
+      listTitle.classList.add("list__title");
+      listItem.appendChild(listTitle);
+      
+      let listSubText = document.createElement('li');
+      listSubText.textContent = technique +","+ department;
+      listSubText.classList.add("sub__list__item");
+      listSubText.classList.add("list__sub__text");
+      listItem.appendChild(listSubText);
+    }
+  }
+});
